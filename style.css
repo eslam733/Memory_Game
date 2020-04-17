@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding:  0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.splash{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e17055bf;
+    z-index: 3;
+}
+
+.splash .Bstart{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50px) translateY(-50px);
+    background-color: #d63031 !important;
+}
+
+.freez{
+    pointer-events: none;
+}
+
+.header{
+    padding: 10px;
+    background-color: #EEE;
+    margin-top: 20px;
+    border: 2px solid skyblue;
+    border-radius: 10px;
+}
+
+.memory-game-block{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.memory-game-block .game-block{
+    flex: 1 0 200px;
+    margin: 0 5px 10px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.memory-game-block .game-block .face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #EEE;
+    backface-visibility: hidden;
+}
+
+.memory-game-block .front i{
+    font-size: 50px;
+    line-height: 200px;    
+}
+
+.memory-game-block .back{
+    background-color: #777 !important;
+
+}
+
+.memory-game-block .front{
+    transform: rotateY(180deg);
+}
+
+
+
+.memory-game-block .back::after{
+    content: "?";
+    position: absolute;
+    left: 71px;
+    top: -18px;
+    font-size: 150px;    
+}
+
+.filp-active,
+.filped{
+    transform: rotateY(180deg);
+}
