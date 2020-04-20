@@ -8,162 +8,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="splash">
-        <button class="btn btn-primary Bstart">START</button>
-    </div>
+    
+    
     <div class="container-md text-center main-container">
         <div class="header d-flex">
-            <div class="header-left text-left col-sm-6">
+            <div class="splash">
+                <button class="btn btn-primary Bstart">START</button>
+            </div>
+            <div class="header-left text-left col-sm-5">
                 Name: <span class="player-name"></span>
             </div>
-            <div class="header-right text-right col-sm-6">
-                Wrong Tries: <span class="wrong">0</span>
+            <div class="header-right text-left col-sm-4 ml-2">
+                Time: <span class="timeOfGame">120</span>
+            </div>
+            <div class="header-right text-right col-sm-3">
+                Score: <span class="score">0</span>
+                <span>|</span>
+                Wrong: <span class="wrong">0</span>
             </div>
         </div>
 
-        <div class="memory-game-block">
-            <div class="game-block" data-icon="1">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fab fa-accessible-icon"></i>
-                </div>
-            </div>
+        <div class="memory-game-block freez">
+            
+        </div>
 
-            <div class="game-block" data-icon="1">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fab fa-accessible-icon"></i>
-                </div>
-            </div>
 
-            <div class="game-block" data-icon="2">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fab fa-adn"></i>  
-                </div>
-            </div>
 
-            <div class="game-block" data-icon="3">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-address-book"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="3">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-address-book"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="4">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="4">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="5">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-friends"></i>
-                </div>
-            </div>
-        
-
-            <div class="game-block" data-icon="5">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-friends"></i>
-                </div>
-            </div>
-            <div class="game-block" data-icon="2">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fab fa-adn"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="6">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-users"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="6">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-users"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="7">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-users-cog"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="7">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-users-cog"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="8">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-times"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="8">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-times"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="9">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="9">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="10">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-house-user"></i>
-                </div>
-            </div>
-
-            <div class="game-block" data-icon="10">
-                <div class="face back"></div>
-                <div class="face front">
-                    <i class="fas fa-house-user"></i>
-                </div>
+        <div class="times">
+            <div class="list-group col-sm-6 mx-auto">
+                
             </div>
         </div>
     </div>
-
+    
     <script src="./js.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
